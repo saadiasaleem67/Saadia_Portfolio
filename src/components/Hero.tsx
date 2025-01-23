@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="lg:h-[530px] sm:h-[450px] h-[570px]  " id="/">
+    <div className="lg:h-[530px] sm:h-[450px] h-[600px]" id="/">
       <div className="container lg:px-6 ">
         <div>
           <div className=" lg:pt-24 pt-3">
