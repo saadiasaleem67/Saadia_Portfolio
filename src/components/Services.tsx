@@ -36,11 +36,11 @@ const Services = () => {
           <h3 className="text-3xl capitalize font-semibold ">Services</h3>
         </div>
         {/* Services info */}
-        <div className="container mt-10 px-10 ">
-          <div className="mx-auto grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 ">
+        <div className="container mt-10 px-4 lg:px-10 ">
+          <div className=" grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 ">
             {service.map((item, idx) => (
               <div key={idx}>
-                <div className=" border-2 border-lightorange p-5 hover:bg-[#264653]">
+                <div className=" border-2 border-lightorange p-3 hover:bg-[#264653]">
                   <div className="flex justify-center items-center ">
                     <p className="text-6xl ">{item.icon}</p>
                   </div>
