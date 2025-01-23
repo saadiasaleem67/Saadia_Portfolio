@@ -7,7 +7,7 @@
     @apply bg-[#111821] leading-loose text-mytext font-[family-name:var(--font-geist-sans)];
   }
   .h1 {
-    @apply text-[48px] xl:text-[70px] leading-[1.1] font-bold;
+    @apply text-[44px] xl:text-[70px] leading-[1.1] font-bold;
   }
   .courses {
     @apply text-zinc-300;
