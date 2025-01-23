@@ -54,11 +54,11 @@ const Services = () => {
           </div>
         </div>
         {/* Contact link*/}
-        <div className="lg:mt-40 mt-28 lg:mb-10 mb-8  ">
+        <div className="lg:mt-40 mt-28 lg:mb-10  bg-red-300 ">
           <div className=" lg:mx-20 rounded-2xl bg-gradient-to-tr from-gray-500 via-[#1e2a3a] to-[#264653]">
-            <div className="text-center lg:p-24 p-20 text-lightorange">
-              <p className="text-sm font-normal ">Get Started</p>
-              <p className="sm:text-4xl  text-2xl font-bold mt-2 mb-7  font-[family-name:var(--font-geist-mono)]">
+            <div className="text-center lg:p-24 p-10">
+              <p className="text-sm font-normal text-darkorange">Get Started</p>
+              <p className="sm:text-4xl text-2xl font-bold mt-2 mb-7 font-[family-name:var(--font-geist-mono)]">
                 Lets do something
                 <br /> new with me!
               </p>
