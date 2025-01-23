@@ -1,77 +1,15 @@
 "use client";
 import React from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { SheetSide } from "./Sheet";
 
-const Links = [
-  {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "About",
-    path: "#About",
-  },
-  {
-    name: "Services",
-    path: "#Services",
-  },
-  {
-    name: "Project",
-    path: "#Project",
-  },
-  {
-    name: "Contact",
-    path: "#Contact",
-  },
-];
+import Link from "next/link";
+
+
+
 const Sidemenubar = () => {
-  const pathname = usePathname();
+
 
   return (
-    // <div>
-    //   <div className="container lg:flex justify-between items-center hidden my-6 px-16 ">
-    //     <div>
-    //       <h1 className=" font-bold text-[48px] xl:text-[30px] lg:text-[30px] ">
-    //         <Link href={"/"}>Saadia Saleem</Link>
-    //       </h1>
-    //     </div>
-    //     <nav className="flex gap-7">
-    //       {/* Navlinks */}
-    //       {Links.map((link, idx) => (
-    //         <div key={idx} className=" my-4 text-center  hover:text-darkorange">
-    //           {pathname === link.path ? (
-    //             <Link
-    //               className="text-lg font-bold border-b-2 text-darkorange border-darkorange "
-    //               href={link.path}
-    //             >
-    //               {link.name}
-    //             </Link>
-    //           ) : (
-    //             <Link
-    //               className="text-lg font-semibold  transition-all "
-    //               href={link.path}
-    //             >
-    //               {link.name}
-    //             </Link>
-    //           )}
-    //         </div>
-    //       ))}
-    //     </nav>
-    //   </div>
-    //   {/* For mobile */}
-    //   <div className=" container lg:hidden flex justify-between py-3">
-    //     <div>
-    //       <h1 className="text-2xl font-bold py-2 ">
-    //         <Link href={"/"}>Saadia Saleem</Link>
-    //       </h1>
-    //     </div>
-    //     <div>
-    //       <SheetSide />
-    //     </div>
-    //   </div>
-    // </div>
+    
     <div className="backdrop-blur-sm w-full sticky top-0">
       <div className="container lg:flex items-center justify-between hidden px-16 my-4">
       <div>
