@@ -62,7 +62,7 @@ const Services = () => {
                 Lets do something
                 <br /> new with me!
               </p>
-              <Link href={"/contact"}>
+              <Link href={"#Contact"}>
                 <Button variant="primary" size="lg">
                   Contact
                 </Button>
