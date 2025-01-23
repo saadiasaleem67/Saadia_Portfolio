@@ -1,5 +1,4 @@
-import Image from "next/image";
-import good from "../../public/images/pic1.png";
+
 import Hero from "@/components/Hero";
 import Services from "../components/Services";
 import { AiOutlineCopyright } from "react-icons/ai";
