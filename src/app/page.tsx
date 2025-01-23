@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import Services from "../components/Services";
 import { AiOutlineCopyright } from "react-icons/ai";
@@ -13,9 +12,9 @@ export default function Home() {
         <About />
         <Services />
         <Project />
-        <div className="bg-[#0f455534]">
+        {/* <div className="bg-[#0f455534]"> */}
           <Contact />
-        </div>
+        {/* </div> */}
         <div className="h-10 flex items-center justify-center">
           <p className="flex">
             <AiOutlineCopyright className="mt-[7px] text-base" />

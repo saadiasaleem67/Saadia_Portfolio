@@ -22,19 +22,19 @@ const contact = [
 ];
 const Contact = () => {
   return (
-    <div className="  lg:h-[800px] lg:pt-24  pt-24" id="Contact">
+    <div className=" lg:h-[800px] lg:pt-24 pt-24" id="Contact">
       <div className="container lg:px-6">
         <div className=" flex gap-3 pt-9  ">
           <span className="border border-r-4 border-darkorange"></span>
           <h3 className="text-3xl capitalize font-semibold">contact us</h3>
         </div>
         {/* contact */}
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 grid-cols-1 items-center justify-center mt-16 gap-[30px] bg-[#1e2a3a]  ">
+        <div className="container bg-[#1e2a3a]">
+          <div className="grid lg:grid-cols-2 grid-cols-1 items-center justify-center mt-16 gap-[30px]   ">
             {/* form */}
-            <div className="xl:order-none xl:flex-row border  m-4">
+            <div className="xl:order-none xl:flex-row border-2 lg:m-4">
               <form
-                className="flex flex-col gap-6 px-4 pt-10 pb-7 rounded-xl"
+                className="flex flex-col gap-6 px-3 pt-4 pb-7 rounded-xl"
                 action="https://formspree.io/f/xannrrlw"
                 method="POST"
               >
