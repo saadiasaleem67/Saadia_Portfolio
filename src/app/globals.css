@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-[#111821] leading-loose text-mytext font-[family-name:var(--font-geist-sans)];
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .h1 {
+    @apply text-[48px] xl:text-[70px] leading-[1.1] font-bold;
+  }
+  .courses {
+    @apply text-zinc-300;
+  }
+  .link {
+    @apply hover:text-darkorange text-xl hover:font-semibold;
+  }
+  .links {
+    @apply text-base hover:text-darkorange;
   }
 }
