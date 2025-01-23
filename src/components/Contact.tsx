@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="container bg-[#1e2a3a]">
           <div className="grid lg:grid-cols-2 grid-cols-1 items-center justify-center mt-16 gap-[30px]   ">
             {/* form */}
-            <div className="xl:order-none xl:flex-row border-2 lg:m-4">
+            <div className="xl:order-none xl:flex-row border-2 lg:m-4 mt-2">
               <form
                 className="flex flex-col gap-6 px-3 pt-4 pb-7 rounded-xl"
                 action="https://formspree.io/f/xannrrlw"
@@ -85,14 +85,14 @@ const Contact = () => {
                   Get in touch now!
                 </p>
               </div>
-              <ul className="flex flex-col gap-10 mt-6">
+              <ul className="flex flex-col gap-7 mt-6">
                 {contact.map((item, idx) => (
                   <li key={idx} className="container flex items-center gap-6">
                     <div className="flex gap-4">
-                      <div className="bg-gray-900 hover:bg-gray-600 w-16 h-10 flex items-center justify-center">
-                        <p className="text-3xl text-center ">{item.icon}</p>
+                      <div className="bg-gray-900 hover:bg-gray-600 lg:w-16 lg:h-10 w-8 h-8 flex items-center justify-center">
+                        <p className="lg:text-3xl  text-xl text-center ">{item.icon}</p>
                       </div>
-                      <p className="text-xl">{item.value}</p>
+                      <p className="lg:text-xl ">{item.value}</p>
                     </div>
                   </li>
                 ))}
