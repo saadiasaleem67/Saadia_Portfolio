@@ -22,7 +22,7 @@ const contact = [
 ];
 const Contact = () => {
   return (
-    <div className=" lg:h-[800px] lg:pt-24 pt-24" id="Contact">
+    <div className=" lg:h-[800px] lg:pt-24 pt-24 " id="Contact">
       <div className="container lg:px-6">
         <div className=" flex gap-3 pt-9  ">
           <span className="border border-r-4 border-darkorange"></span>
