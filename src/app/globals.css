@@ -13,7 +13,7 @@
     @apply text-zinc-300;
   }
   .link {
-    @apply hover:text-darkorange text-xl hover:font-semibold;
+    @apply hover:text-darkorange text-xl ;
   }
   .links {
     @apply text-base hover:text-darkorange;

@@ -3,12 +3,17 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="lg:h-[530px] sm:h-[450px] h-[600px] mt-8" id="/">
       <div className="container lg:px-6 ">
-        <div>
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 2 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+        >
           <div className=" lg:pt-24 pt-3">
             <span className="text-darkorange capitalize font-[family-name:var(--font-geist-mono)]">
               frontend developer
@@ -56,7 +61,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
