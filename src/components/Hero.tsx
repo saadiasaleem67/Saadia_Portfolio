@@ -12,8 +12,9 @@ const Hero = () => {
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 2 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
+          {/* Name */}
           <div className=" lg:pt-24 pt-3">
             <span className="text-darkorange capitalize font-[family-name:var(--font-geist-mono)]">
               frontend developer
@@ -24,6 +25,7 @@ const Hero = () => {
               <span className="text-darkorange">Saadia Saleem</span>
             </h1>
           </div>
+          {/* paragraph */}
           <div>
             <p>
               Skilled Frontend Developer with experience building modern and
@@ -33,35 +35,45 @@ const Hero = () => {
               your project? Check out my projects and resume.
             </p>
           </div>
-          {/* Resume Button */}
-          <div className="mt-6 xl:flex lg:flex gap-16 items-center ">
-            <div>
-              {" "}
-              <Link href="saadiaresume.pdf" target="_blank">
-                <Button variant="default" size="lg">
-                  Resume{" "}
-                </Button>
-              </Link>
-            </div>
-            {/* Socials Links */}
-            <div className="flex gap-3 text-2xl lg:mt-0 mt-4">
-              <button className="  rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange">
-                <Link
-                  href={"https://www.linkedin.com/in/saadia-saleem-683878293/"}
-                >
-                  {" "}
-                  <FaLinkedinIn />
-                </Link>
-              </button>
-              <button className="rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange">
-                <Link href={"https://github.com/saadiasaleem67"}>
-                  {" "}
-                  <FaGithub />
-                </Link>
-              </button>
-            </div>
-          </div>
         </motion.div>
+        {/* Resume Button */}
+        <div className="mt-6 xl:flex lg:flex gap-16 items-center ">
+          <motion.div
+            initial={{ y: 35, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 2 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            {" "}
+            <Link href="saadiaresume.pdf" target="_blank">
+              <Button variant="default" size="lg">
+                Resume{" "}
+              </Button>
+            </Link>
+          </motion.div>
+          {/* Socials Links */}
+          <div className="flex gap-3 text-2xl lg:mt-0 mt-4">
+            <motion.button className="  rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange"
+               initial={{ y: 40, opacity: 0 }}
+               whileInView={{ y: 0, opacity: 2 }}
+               transition={{ duration: 0.6, delay: 0.6 }}>
+              <Link
+                href={"https://www.linkedin.com/in/saadia-saleem-683878293/"}
+              >
+                {" "}
+                <FaLinkedinIn />
+              </Link>
+            </motion.button>
+            <motion.button className="rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange"
+             initial={{ y: 40, opacity: 0 }}
+             whileInView={{ y: 0, opacity: 2 }}
+             transition={{ duration: 0.6, delay: 0.6 }}>
+              <Link href={"https://github.com/saadiasaleem67"}>
+                {" "}
+                <FaGithub />
+              </Link>
+            </motion.button>
+          </div>
+        </div>
       </div>
     </div>
   );
