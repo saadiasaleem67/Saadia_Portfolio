@@ -41,9 +41,9 @@ const Sidemenubar = () => {
         <h1 className=" font-bold text-2xl text-center py-2">
           <Link href={"/"}>Saadia Saleem</Link>
         </h1>
-        <nav className="flex  justify-center items-center mt-4">
+        <nav className="flex justify-center items-center mt-4">
           {/* Navlinks */}
-          <ul className="flex gap-7">
+          <ul className="flex gap-5">
             <li className="links hover:text-darkorange">
               <Link href={"/"}>Home</Link>
             </li>
