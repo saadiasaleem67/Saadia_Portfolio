@@ -25,7 +25,7 @@ const projects = [
     link: "https://cloudinary-photo-album-rho.vercel.app/",
     category: "Frontend",
     extra: "",
-    git: "/",
+    git: "https://github.com/saadiasaleem67/Cloudinary-photo-album",
     stack: [
       { name: "Nextjs" },
       { name: "Tailwindcss" },
@@ -80,6 +80,7 @@ const Project = () => {
       transition={{ duration: 2 }}
     >
       <div className="container lg:px-6">
+        {/* My Project */}
         <motion.div
           className="flex gap-3 pt-9"
           initial={{ y: -20, opacity: 0 }}
@@ -108,7 +109,7 @@ const Project = () => {
                   className="w-[1500px]"
                 />
               </div>
-              {/* decsription */}
+              {/* All Project Decsription */}
               <div className="mt-3">
                 {/* name */}
                 <div>
@@ -125,9 +126,8 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-                {/* code Link */}
                 <div className="mt-3 flex gap-5 ">
-                  {" "}
+                  {/* code Link */}
                   <div>
                     <Link href={items.link} target="_blank">
                       <TooltipProvider delayDuration={100}>

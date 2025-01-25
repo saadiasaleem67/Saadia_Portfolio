@@ -8,13 +8,14 @@ import { FaArrowLeft } from "react-icons/fa6";
 const About = () => {
   return (
     <motion.div
-      className="  lg:h-screen bg-[#165a6f34] lg:pt-24 pt-24"
+      className="lg:h-screen bg-[#165a6f34] lg:pt-24 pt-24"
       id="About"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 2 }}
       transition={{ duration: 2 }}
     >
       <div className="container lg:px-6">
+        {/* About us */}
         <motion.div
           className=" flex gap-3 pt-9  "
           initial={{ y: -20, opacity: 0 }}
@@ -25,6 +26,7 @@ const About = () => {
           <h3 className="text-3xl capitalize font-semibold ">About me</h3>
         </motion.div>
         <div className="container">
+          {/* Paragrapah */}
           <motion.div
             className="mt-8"
             initial={{ opacity: 0 }}
@@ -39,7 +41,7 @@ const About = () => {
               pages that look great and work smoothly.
             </p>
           </motion.div>
-
+          {/* My Skills and courses Section */}
           <motion.div className=" p-4 mt-3 ">
             <div className=" grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 justify-between mt-5 lg:gap-24 gap-10 ">
               {/* Cources */}
@@ -93,7 +95,7 @@ const About = () => {
                 </div>
               </motion.div>
             </div>
-            {/* resume button */}
+            {/* Resume button */}
             <motion.div
               className="mt-5"
               initial={{ y: 35, opacity: 0 }}

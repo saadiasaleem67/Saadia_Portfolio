@@ -12,9 +12,7 @@ export default function Home() {
         <About />
         <Services />
         <Project />
-        {/* <div className="bg-[#0f455534]"> */}
-          <Contact />
-        {/* </div> */}
+        <Contact />
         <div className="h-10 flex items-center justify-center">
           <p className="flex">
             <AiOutlineCopyright className="mt-[7px] text-base" />

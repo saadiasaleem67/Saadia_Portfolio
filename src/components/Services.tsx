@@ -38,8 +38,9 @@ const Services = () => {
       transition={{ duration: 2 }}
     >
       <div className="container lg:px-6">
+        {/* Services */}
         <motion.div
-          className=" flex gap-3 pt-9  "
+          className="flex gap-3 pt-9  "
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 2 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -98,16 +99,3 @@ const Services = () => {
 };
 
 export default Services;
-
-{
-  /* <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 ">
-  {service.map((item,idx)=>(
-    <div key={idx}>
-      <div>
-        {item.icon}
-        {item.title}
-      </div>
-    </div>
-  ))}
-</div> */
-}

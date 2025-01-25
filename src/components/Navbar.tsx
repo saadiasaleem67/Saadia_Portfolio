@@ -16,6 +16,7 @@ const Sidemenubar = () => {
             <Link href={"/"}>Saadia Saleem</Link>
           </h1>
         </div>
+        {/* NavLinks */}
         <nav>
           <ul className="flex gap-7">
             <li className="link">
@@ -41,8 +42,8 @@ const Sidemenubar = () => {
         <h1 className=" font-bold text-2xl text-center py-2">
           <Link href={"/"}>Saadia Saleem</Link>
         </h1>
+        {/* Navlinks */}
         <nav className="flex justify-center items-center mt-4">
-          {/* Navlinks */}
           <ul className="flex gap-5">
             <li className="links hover:text-darkorange">
               <Link href={"/"}>Home</Link>
@@ -62,15 +63,6 @@ const Sidemenubar = () => {
           </ul>
         </nav>
       </div>
-
-      {/* <div className=" container lg:hidden flex justify-between py-3">
-         <div>
-           <h1 className="text-2xl font-bold py-2 ">
-             <Link href={"/"}>Saadia Saleem</Link>
-           </h1>
-       </div>
-           <SheetSide />
-         </div> */}
     </motion.div>
   );
 };

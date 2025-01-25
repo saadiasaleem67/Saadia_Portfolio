@@ -36,8 +36,8 @@ const Hero = () => {
             </p>
           </div>
         </motion.div>
-        {/* Resume Button */}
         <div className="mt-6 xl:flex lg:flex gap-16 items-center ">
+          {/* Resume Button */}
           <motion.div
             initial={{ y: 35, opacity: 0 }}
             whileInView={{ y: 0, opacity: 2 }}
@@ -52,10 +52,12 @@ const Hero = () => {
           </motion.div>
           {/* Socials Links */}
           <div className="flex gap-3 text-2xl lg:mt-0 mt-4">
-            <motion.button className="  rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange"
-               initial={{ y: 40, opacity: 0 }}
-               whileInView={{ y: 0, opacity: 2 }}
-               transition={{ duration: 0.6, delay: 0.6 }}>
+            <motion.button
+              className="  rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange"
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 2 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
               <Link
                 href={"https://www.linkedin.com/in/saadia-saleem-683878293/"}
               >
@@ -63,10 +65,12 @@ const Hero = () => {
                 <FaLinkedinIn />
               </Link>
             </motion.button>
-            <motion.button className="rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange"
-             initial={{ y: 40, opacity: 0 }}
-             whileInView={{ y: 0, opacity: 2 }}
-             transition={{ duration: 0.6, delay: 0.6 }}>
+            <motion.button
+              className="rounded-full p-2 border border-lightorange focus:hover:border-darkorange hover:border-darkorange"
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 2 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
               <Link href={"https://github.com/saadiasaleem67"}>
                 {" "}
                 <FaGithub />

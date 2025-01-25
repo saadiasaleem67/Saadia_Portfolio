@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import React from "react";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-import { FaLocationDot } from "react-icons/fa6";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -25,30 +24,33 @@ const contact = [
 const Contact = () => {
   return (
     <motion.div
-      className=" lg:h-[800px] lg:pt-24 pt-24 "
+      className="lg:h-[800px] lg:pt-24 pt-24 "
       id="Contact"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 2 }}
       transition={{ duration: 2 }}
     >
       <div className="container lg:px-6">
-        <motion.div 
-         initial={{ y: -20, opacity: 0 }}
-         whileInView={{ y: 0, opacity: 2 }}
-         transition={{ duration: 0.5, delay: 0.3 }}
-        className=" flex gap-3 pt-9  ">
+        {/* Contact us */}
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 2 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className=" flex gap-3 pt-9  "
+        >
           <span className="border border-r-4 border-darkorange"></span>
           <h3 className="text-3xl capitalize font-semibold">contact us</h3>
         </motion.div>
-        {/* contact */}
+        {/* contact Information */}
         <div className="container bg-[#1e2a3a]">
           <div className="grid lg:grid-cols-2 grid-cols-1 items-center justify-center mt-16 gap-[30px]   ">
-            {/* form */}
+            {/*  Contact form */}
             <motion.div
-             initial={{ y: 40, opacity: 0 }}
-             whileInView={{ y: 0, opacity: 2 }}
-             transition={{ duration: 0.6, delay: 0.4 }}
-             className="xl:order-none xl:flex-row border-2 lg:m-4 mt-2">
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 2 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="xl:order-none xl:flex-row border-2 lg:m-4 mt-2"
+            >
               <form
                 className="flex flex-col gap-6 px-3 pt-4 pb-7 rounded-xl"
                 action="https://formspree.io/f/xannrrlw"
@@ -77,26 +79,26 @@ const Contact = () => {
                   name="email"
                   required
                 />
-                <div className="grid w-full gap-2">
-                  <Textarea
-                    placeholder="Type your message here.*"
-                    id="message"
-                    name="message"
-                    required
-                  />
-                </div>
+
+                <Textarea
+                  placeholder="Type your message here.*"
+                  id="message"
+                  name="message"
+                  required
+                />
 
                 <Button variant={"primary"} className="max-w-40 mb-4">
                   Send Message
                 </Button>
               </form>
             </motion.div>
-
-            {/* info */}
-            <motion.div className="container py-2"
-             initial={{ y: 40, opacity: 0 }}
-             whileInView={{ y: 0, opacity: 2 }}
-             transition={{ duration: 0.6, delay: 0.4 }}>
+            {/* My info */}
+            <motion.div
+              className="container py-2"
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 2 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               <div className="">
                 <p className="sm:text-5xl text-4xl text-gray-400  font-[family-name:var(--font-geist-mono)]">
                   {" "}
