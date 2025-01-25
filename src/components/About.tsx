@@ -1,19 +1,36 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className="  lg:h-screen bg-[#165a6f34] lg:pt-24 pt-24" id="About">
+    <motion.div
+      className="  lg:h-screen bg-[#165a6f34] lg:pt-24 pt-24"
+      id="About"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 2 }}
+      transition={{ duration: 2 }}
+    >
       <div className="container lg:px-6">
-        <div className=" flex gap-3 pt-9  ">
+        <motion.div
+          className=" flex gap-3 pt-9  "
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 2 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <span className="border border-r-4 border-darkorange"></span>
           <h3 className="text-3xl capitalize font-semibold ">About me</h3>
-        </div>
+        </motion.div>
         <div className="container">
-          <div className="mt-8">
+          <motion.div
+            className="mt-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 2 }}
+            transition={{ duration: 2 }}
+          >
             <p>
               Hi, I am Passionate Frontend Developer utilizing Next.js,
               TypeScript, and Tailwind CSS to build fast, secure, and visually
@@ -21,12 +38,16 @@ const About = () => {
               creative websites. I enjoy turning ideas into user-friendly web
               pages that look great and work smoothly.
             </p>
-          </div>
+          </motion.div>
 
-          <div className=" p-4 mt-3 ">
+          <motion.div className=" p-4 mt-3 ">
             <div className=" grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 justify-between mt-5 lg:gap-24 gap-10 ">
               {/* Cources */}
-              <div>
+              <motion.div
+                initial={{ y: 35, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 2 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 <h3 className="text-2xl pl-3 ">Courses</h3>
                 <div className="flex mt-2 ">
                   <div className="w-full h-1 rounded-full bg-darkorange inline-flex" />
@@ -49,9 +70,13 @@ const About = () => {
                     <p className="pl-3 ">2023 - 2024</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
               {/* Skills */}
-              <div className=" ">
+              <motion.div
+                initial={{ y: 35, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 2 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 <h3 className="text-2xl pl-3 ">Skills</h3>
                 <div className="flex mt-2 ">
                   <div className="w-full h-1 rounded-full bg-darkorange inline-flex" />
@@ -66,21 +91,26 @@ const About = () => {
                     <li>Sanity.io</li>
                   </ul>
                 </div>
-              </div>
+              </motion.div>
             </div>
             {/* resume button */}
-            <div className="mt-5">
+            <motion.div
+              className="mt-5"
+              initial={{ y: 35, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 2 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
               {" "}
               <Link href="saadiaresume.pdf" target="_blank">
                 <Button variant="outline" size="lg" className="rounded-full">
-                <FaArrowLeft  className="text-2xl mr-2"/> Resume 
+                  <FaArrowLeft className="text-2xl mr-2" /> Resume
                 </Button>
               </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

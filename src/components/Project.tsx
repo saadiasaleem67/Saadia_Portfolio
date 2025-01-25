@@ -61,25 +61,44 @@ const projects = [
     ],
   },
 ];
+
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { motion } from "framer-motion";
 
 const Project = () => {
   return (
-    <div className="lg:pt-24  pt-24 bg-[#0b425331]"  id="Project">
+    <motion.div
+      className="lg:pt-24  pt-24 bg-[#0b425331]"
+      id="Project"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 2 }}
+      transition={{ duration: 2 }}
+    >
       <div className="container lg:px-6">
-        <div className="flex gap-3 pt-9">
+        <motion.div
+          className="flex gap-3 pt-9"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 2 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <span className="border border-r-4 border-darkorange "></span>
           <h3 className="text-3xl capitalize font-semibold">my project</h3>
-        </div>
+        </motion.div>
         {/* project data */}
         <div className="container grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 place-items-center gap-5 xl:gap-5  mt-16 mb-4">
           {projects.map((items, idx) => (
-            <div key={idx} className=" bg-[#1e2a3a] p-4 ">
+            <motion.div
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 2 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              key={idx}
+              className=" bg-[#1e2a3a] p-4 "
+            >
               <div>
                 <Image
                   src={items.pic}
@@ -140,11 +159,11 @@ const Project = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

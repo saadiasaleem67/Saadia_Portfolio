@@ -1,44 +1,26 @@
 "use client";
 import React from "react";
-
 import Link from "next/link";
-
-
-
+import { motion } from "framer-motion";
 const Sidemenubar = () => {
-
-
   return (
-    
-    <div className="backdrop-blur-sm w-full sticky top-0">
+    <motion.div
+      className="backdrop-blur-sm w-full sticky top-0"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+    >
       <div className="container lg:flex items-center justify-between hidden px-16 my-4">
-      <div>
+        <div>
           <h1 className=" font-bold text-[48px] xl:text-[30px] lg:text-[30px]  py-2">
             <Link href={"/"}>Saadia Saleem</Link>
           </h1>
         </div>
         <nav>
-          {/* Navlinks */}
-          {/* {Links.map((link, idx) => (
-            <div key={idx} className=" my-4 text-center  hover:text-darkorange">
-              {pathname === link.path ? (
-                <Link
-                  className="text-lg font-bold  "
-                  href={link.path}
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <Link
-                  className="text-lg font-semibold  transition-all "
-                  href={link.path}
-                >
-                  {link.name}
-                </Link>
-              )}
-            </div>
-          ))} */}
-          <ul  className="flex gap-7">
+          <ul className="flex gap-7">
+            <li className="link">
+              <Link href={"/"}>Home</Link>
+            </li>
             <li className="link">
               <Link href={"#About"}>About</Link>
             </li>
@@ -56,12 +38,15 @@ const Sidemenubar = () => {
       </div>
       {/* For mobile */}
       <div className="my-2 lg:hidden">
-      <h1 className=" font-bold text-2xl text-center py-2">
-            <Link href={"/"}>Saadia Saleem</Link>
-          </h1>
-          <nav className="flex  justify-center items-center mt-4">
+        <h1 className=" font-bold text-2xl text-center py-2">
+          <Link href={"/"}>Saadia Saleem</Link>
+        </h1>
+        <nav className="flex  justify-center items-center mt-4">
           {/* Navlinks */}
-          <ul  className="flex gap-7">
+          <ul className="flex gap-7">
+            <li className="links hover:text-darkorange">
+              <Link href={"/"}>Home</Link>
+            </li>
             <li className="links hover:text-darkorange">
               <Link href={"#About"}>About</Link>
             </li>
@@ -77,8 +62,8 @@ const Sidemenubar = () => {
           </ul>
         </nav>
       </div>
-     
-       {/* <div className=" container lg:hidden flex justify-between py-3">
+
+      {/* <div className=" container lg:hidden flex justify-between py-3">
          <div>
            <h1 className="text-2xl font-bold py-2 ">
              <Link href={"/"}>Saadia Saleem</Link>
@@ -86,10 +71,7 @@ const Sidemenubar = () => {
        </div>
            <SheetSide />
          </div> */}
-    </div>
-      
-     
-      
+    </motion.div>
   );
 };
 
