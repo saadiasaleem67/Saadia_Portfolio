@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
-import { FaGithub } from "react-icons/fa";
+
 
 const projects = [
   {
