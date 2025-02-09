@@ -113,32 +113,22 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-                <div className="mt-3 flex gap-5 ">
+                <div className="mt-3 ">
                   {/* code Link */}
                   <div>
                     <Link href={items.link} target="_blank">
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
-                          <TooltipTrigger className="w-9 h-9 bg-[#1a4350] rounded-full flex justify-center items-center">
-                            <HiArrowUpRight className="text-xl " />
+                          <TooltipTrigger>
+                            <div className="w-22 h-11 bg-[#1a4350] flex gap-2 text-xl p-2 rounded-full">
+                              <p>
+                                <HiArrowUpRight className="text-xl mt-1" />
+                              </p>
+                              <p className="">Live </p>
+                            </div>
                           </TooltipTrigger>
                           <TooltipContent>
                             <p>Live Project</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </Link>
-                  </div>
-                  {/* github link */}
-                  <div>
-                    <Link href={items.git} target="_blank">
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-9 h-9 bg-[#1a4350] rounded-full flex justify-center items-center">
-                            <FaGithub className="text-2xl " />
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>Github Reprosetoey</p>
                           </TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
